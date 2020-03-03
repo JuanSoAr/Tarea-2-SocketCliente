@@ -48,7 +48,9 @@ void MainWindow::sendMensaje()
  * Envia un mensaje el cual pide que se implemente el Dijkstra
  */
 void MainWindow::pedirMensaje(){
-    conexion->setMensaje("Pedir datos");
+    conexion->setMensaje(ui->dato1->text().toStdString().c_str());
+    conexion->setMensaje(ui->dato2->text().toStdString().c_str());
+
 }
 /**
  * @brief MainWindow::printMensaje

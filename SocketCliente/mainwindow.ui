@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>561</width>
-    <height>425</height>
+    <height>209</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,10 +30,30 @@
    <widget class="QPlainTextEdit" name="txt_log">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>340</x>
       <y>10</y>
-      <width>241</width>
-      <height>291</height>
+      <width>201</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="dato1">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>201</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="dato2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>40</y>
+      <width>201</width>
+      <height>25</height>
      </rect>
     </property>
    </widget>

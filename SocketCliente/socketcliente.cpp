@@ -2,7 +2,12 @@
 SocketCliente::SocketCliente()
 {
 }
-
+/**
+ * @brief SocketCliente::connectar
+ * Conencta el cleinte con el servidor
+ * @return
+ * returna true si no existe ningu fallo en la conexion
+ */
 bool SocketCliente::connectar()
 {
     descriptor = socket(AF_INET,SOCK_STREAM,IPPROTO_TCP);
@@ -22,7 +27,12 @@ bool SocketCliente::connectar()
     return true;
 }
 
-
+/**
+ * @brief SocketCliente::controlador
+ * Controla la llega de mensaje del servidor
+ * @param obj
+ * @return
+ */
 void * SocketCliente::controlador(void *obj)
 {
     SocketCliente *padre = (SocketCliente*)obj;
@@ -47,10 +57,12 @@ void * SocketCliente::controlador(void *obj)
     pthread_exit(NULL);
 }
 
-
+/**
+ * @brief SocketCliente::setMensaje
+ * @param msn
+ * Escribe el mensaje que se va a enviar
+ */
 void SocketCliente::setMensaje(const char *msn)
 {
-   // char *mensaje = "GET / HTTP/1.1\r\nHost: www.google.com\r\nConnection: keep-alive\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36\r\nX-Client-Data: CIm2yQEIorbJAQiptskBCLiIygEI3pbKAQ==\r\nAccept-Encoding: gzip,deflate,sdch\r\nAccept-Language: es-419,es;q=0.8,en;q=0.6\r\n\n";
-
     cout << "bytes enviados "<< send(descriptor,msn,strlen(msn),0) << endl;
 }

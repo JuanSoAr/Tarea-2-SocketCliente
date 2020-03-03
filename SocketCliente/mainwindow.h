@@ -4,11 +4,16 @@
 #include <QMainWindow>
 #include <socketcliente.h>
 #include <QMessageBox>
-
+/**
+ *
+ */
 namespace Ui {
 class MainWindow;
 }
-
+/**
+ * @brief The MainWindow class
+ * Clase controladora de la  interfaz
+ */
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -23,7 +28,7 @@ private:
 private slots:
     void printMensaje(QString msn);
     void sendMensaje();
-    void on_pushButton_clicked();
+    void pedirMensaje();
 };
 
 #endif // MAINWINDOW_H

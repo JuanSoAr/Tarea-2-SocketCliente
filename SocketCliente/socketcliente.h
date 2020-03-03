@@ -14,7 +14,10 @@
 #include <arpa/inet.h>
 
 using namespace std;
-
+/**
+ * @brief The SocketCliente class
+ * Es el obejeto cleinte el cual controla toda la clase cliente
+ */
 class SocketCliente: public QObject
 {
     Q_OBJECT

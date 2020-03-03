@@ -37,7 +37,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="c_enviar">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -48,19 +48,6 @@
     </property>
     <property name="text">
      <string>Dijkstra</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="salida">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>10</y>
-      <width>67</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
     </property>
    </widget>
   </widget>
